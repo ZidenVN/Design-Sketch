@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Coded from Scratch</title>
+    <title>My Responsive Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Landing Page - Mobile View -->
-<header>
-    <div class="logo">Your Logo</div>
-    <nav>
+<header class="header">
+    <h1>Welcome to My Website</h1>
+    <nav class="nav">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -20,29 +19,37 @@
         </ul>
     </nav>
 </header>
-<section class="landing-content">
-    <h1>Welcome to Our Site</h1>
-    <p>A brief introduction to our purpose...</p>
-    <a href="#" class="cta-button">Get Started</a>
-</section>
 
-<!-- Main Content Page - Mobile View -->
-<main>
+<main class="container">
     <section>
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet elit eget quam eleifend consequat.</p>
     </section>
     <section>
-        <h2>Section 2</h2>
-        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus...</p>
-    </section>
-    <nav class="mobile-nav">
+        <h2>Our Services</h2>
         <ul>
-            <li><a href="#">Section 1</a></li>
-            <li><a href="#">Section 2</a></li>
+            <li>Service 1</li>
+            <li>Service 2</li>
+            <li>Service 3</li>
         </ul>
-    </nav>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
 </main>
+
+<footer class="footer">
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
